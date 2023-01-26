@@ -15,6 +15,7 @@ body{
 }
 /* HEADER */
 header{
+    height: 40px;
     position: relative;
 }
 .header-item {
@@ -33,4 +34,39 @@ header{
 }
 .header-item ul li span{
     margin: 0 5px;
+}
+/* /HEADER */
+
+/* MAIN  */
+main {
+    position: relative;
+    width: calc(100vw - 100px);
+    height: 100vh;
+    margin: 0 auto;
+    overflow: auto;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+}
+.container-content{
+    position: relative;
+}
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(105, 116, 125, 0.7);
+    padding: 5px;
+}
+/* FOOTER  */
+footer{
+    height: 60px;
+    background-color:#222222 ;
 }
