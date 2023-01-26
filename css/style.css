@@ -9,10 +9,11 @@ body{
     background-color: #000000;
     color: white;
 }
-.header-item ul{
+.header-item ul, .footer-left ul, .footer-mid ul{
     list-style: none;
     display: flex;
 }
+
 /* HEADER */
 header{
     height: 40px;
@@ -32,15 +33,16 @@ header{
     padding: 5px;
     margin: 5px 2px;
 }
-.header-item ul li span{
+.header-item ul li span, footer ul li {
     margin: 0 5px;
+    padding: 7px;
 }
 /* /HEADER */
 
 /* MAIN  */
 main {
     position: relative;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 120px);
     height: 100vh;
     margin: 0 auto;
     overflow: auto;
@@ -67,6 +69,35 @@ main {
 }
 /* FOOTER  */
 footer{
-    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    height: 90px;
     background-color:#222222 ;
 }
+footer ul li i{
+    padding: 15px;
+    width: 10px;
+}
+footer span{
+    padding: 17px;
+}
+.footer-right{
+    color: red;
+    background-color: rgba(105, 116, 125, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.footer-left, .footer-mid, .footer-right{
+    flex-shrink: 0;
+}
+.icon-footer{
+    display: flex;
+    justify-content: space-around;
+}
+#greenshare{
+    color: lime;
+}
+
