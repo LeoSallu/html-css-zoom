@@ -1,0 +1,36 @@
+/* RESET  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+body{
+    background-color: #000000;
+    color: white;
+}
+.header-item ul{
+    list-style: none;
+    display: flex;
+}
+/* HEADER */
+header{
+    position: relative;
+}
+.header-item {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+}
+.header-item ul li{
+    background-color: #4a4a4a;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 2px;
+}
+.header-item ul li span{
+    margin: 0 5px;
+}
