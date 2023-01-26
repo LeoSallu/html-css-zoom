@@ -8,6 +8,7 @@
 body{
     background-color: #000000;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .header-item ul, .footer-left ul, .footer-mid ul{
     list-style: none;
@@ -67,6 +68,8 @@ main {
     background-color: rgba(105, 116, 125, 0.7);
     padding: 5px;
 }
+/* /MAIN  */
+
 /* FOOTER  */
 footer{
     display: flex;
@@ -76,12 +79,18 @@ footer{
     height: 90px;
     background-color:#222222 ;
 }
-footer ul li i{
-    padding: 15px;
-    width: 10px;
+.footer-left, .footer-mid, .footer-right{
+    flex-shrink: 0;
 }
-footer span{
-    padding: 17px;
+.footer-left ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.footer-left ul li i{
+    font-size: 25px;
+    text-align: center;
 }
 .footer-right{
     color: red;
@@ -90,14 +99,16 @@ footer span{
     align-items: center;
     padding: 15px;
 }
-.footer-left, .footer-mid, .footer-right{
-    flex-shrink: 0;
-}
-.icon-footer{
+.icon-footer ul li{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+.footer-mid ul li i {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 #greenshare{
     color: lime;
 }
-
+/* /FOOTER  */
