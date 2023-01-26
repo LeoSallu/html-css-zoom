@@ -91,6 +91,7 @@ footer{
 .footer-left ul li i{
     font-size: 25px;
     text-align: center;
+    padding-bottom: 10px;
 }
 .footer-right{
     color: red;
